@@ -31,7 +31,7 @@ namespace SchoolManegementSystem
                 timer1.Stop();
 
                 LoginForm loginForm = new LoginForm();
-                loginForm.Show();
+                loginForm.ShowDialog();
                 this.Hide();
             }
         }
