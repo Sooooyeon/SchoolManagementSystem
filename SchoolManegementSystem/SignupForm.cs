@@ -21,7 +21,7 @@ namespace SchoolManegementSystem
             InitializeComponent();
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
+        private void SignupForm_Load(object sender, EventArgs e)
         {
             label2.Left = (this.ClientSize.Width - label2.Width) / 2;
             panel3.Left = (this.ClientSize.Width - panel3.Width) / 2;
@@ -56,8 +56,8 @@ namespace SchoolManegementSystem
                         conn.Open();
                         string query = "INSERT INTO user (name, password) VALUES (@name, @password)";
                         MySqlCommand cmd = new MySqlCommand(query, conn);
-                        cmd.Parameters.AddWithValue("@name", txtName.Text);
-                        cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+                        cmd.Parameters.AddWithValue("@name", txtName.Text.Trim());
+                        cmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
                         int result = cmd.ExecuteNonQuery();
 
                         if (result > 0)
@@ -74,18 +74,18 @@ namespace SchoolManegementSystem
                         }
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
-
+                    MessageBox.Show("오류가 발생했습니다: " + ex.Message);
                 }
-               
+
             }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             LoginForm loginForm = new LoginForm();
-            loginForm.ShowDialog();
+            loginForm.Show();
             this.Hide();
 
         }

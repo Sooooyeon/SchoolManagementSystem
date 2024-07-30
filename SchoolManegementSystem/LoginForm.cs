@@ -48,15 +48,17 @@ namespace SchoolManegementSystem
                         conn.Open();
                         string selectData = "SELECT COUNT(*) FROM user WHERE name = @name AND password = @password";
                         MySqlCommand cmd = new MySqlCommand(selectData, conn);
-                        cmd.Parameters.AddWithValue("@name", txtName.Text);
-                        cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+                        cmd.Parameters.AddWithValue("@name", txtName.Text.Trim());
+                        cmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
 
                         int userCount = Convert.ToInt32(cmd.ExecuteScalar());
 
                         if (userCount > 0)
                         {
                             MessageBox.Show("로그인 성공!", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            // 로그인 성공 후 다른 폼으로 이동 등의 로직 추가
+                            MainForm mainForm = new MainForm();
+                            mainForm.Show();
+                            this.Hide();
                         }
                         else
                         {
@@ -74,7 +76,7 @@ namespace SchoolManegementSystem
         private void btnSignup_Click(object sender, EventArgs e)
         {
             SignupForm signupForm = new SignupForm();
-            signupForm.ShowDialog();
+            signupForm.Show();
             this.Hide();
         }
 

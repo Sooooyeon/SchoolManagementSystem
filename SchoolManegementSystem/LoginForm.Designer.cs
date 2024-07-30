@@ -81,7 +81,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(48)))), ((int)(((byte)(2)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 30);
@@ -107,11 +107,11 @@
             // 
             // btnSignup
             // 
-            this.btnSignup.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnSignup.BackColor = System.Drawing.Color.Maroon;
             this.btnSignup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignup.FlatAppearance.BorderSize = 0;
-            this.btnSignup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnSignup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnSignup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.btnSignup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
             this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignup.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnSignup.ForeColor = System.Drawing.Color.White;
@@ -137,11 +137,11 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnLogin.BackColor = System.Drawing.Color.Maroon;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
